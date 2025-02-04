@@ -6,10 +6,11 @@ import { AuthorListComponent } from './author-list/author-list.component';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ToggleComponent } from './toggle/toggle.component';
+import { NameFormComponent } from './name-form/name-form.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HelloComponent, ProgressBarComponent, AuthorListComponent, CommonModule, FormsModule, ToggleComponent],
+  imports: [RouterOutlet, HelloComponent, ProgressBarComponent, AuthorListComponent, CommonModule, FormsModule, ToggleComponent, NameFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
@@ -19,7 +20,7 @@ export class AppComponent {
   title = 'todo_list';
   name = 'Nhat Phan';
 
-  
+
   ngOnInit() {
     console.log(this.container)
   }

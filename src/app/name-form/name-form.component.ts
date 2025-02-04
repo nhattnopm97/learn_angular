@@ -1,8 +1,9 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { FormsModule, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-name-form',
+  imports: [FormsModule],
   templateUrl: './name-form.component.html',
   styleUrls: ['./name-form.component.css']
 })
